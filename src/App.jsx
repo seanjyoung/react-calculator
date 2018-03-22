@@ -204,7 +204,7 @@ class App extends Component {
       (isEqualPriority &&
         OPERATIONS[comparisonOperator].associativity === "left");
 
-    return shouldPush ? true : false;
+    return shouldPush;
   }
 
   handleBackSpace() {
