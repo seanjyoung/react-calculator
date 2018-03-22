@@ -210,7 +210,6 @@ class App extends Component {
   handleBackSpace() {
     const { displayedValue } = this.state;
     const newString = displayedValue.substr(0, displayedValue.length - 1);
-    debugger;
     this.setState({ displayedValue: newString });
   }
 
