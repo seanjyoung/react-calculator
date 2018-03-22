@@ -1,0 +1,29 @@
+@import "../app";
+$items-per-row: 5;
+
+.button-grid {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.button {
+  width: $body-width / $items-per-row;
+  height: $body-width / $items-per-row;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+  font-size: 16px;
+  font-family: $font-family;
+  transition: background-color 200ms ease;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:hover {
+  background-color: #e5e5e5;
+}
